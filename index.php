@@ -4,7 +4,7 @@
 
 const TEST_CONSTANTA = 'asd';
 
-$user_name = 'Igor';
+$userName = 'Igor';
 require_once 'function.php';
 if (1 == 1) {
     echo 'hi';
