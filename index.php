@@ -81,3 +81,25 @@ foreach ($cars as $marka => $value) {
     }
     echo '<br><br>';
 }
+
+//DZ#1.6
+
+<table border="5px solid">
+    <?php
+    for ($i=1; $i<=10; $i++) {
+        echo '<tr>';
+        for ($j = 1; $j <= 10; $j++) {
+            $result = $i*$j;
+            if ($result % 2 == 0) {
+                echo '<td>(' . $result . ')</td>';
+            } elseif ($result % 2 != 0) {
+                echo '<td>[' . $result . ']</td>';
+            } else {
+                echo '<td>' . $result . '</td>';
+            }
+        }
+        echo '</tr>';
+    }
+    ?>
+
+</table>
